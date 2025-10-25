@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio" />
-  <title>Data Analyst & AI Enthusiast | Portfolio</title>
+  <meta name="description" content="Portfolio of a Data Analyst, Power BI Developer, SQL & Python Developer, and AI Enthusiast." />
+  <title>Portfolio - Data Analyst</title>
 
   <style>
     * {
@@ -142,25 +142,34 @@
       display: inline-block;
     }
 
-
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
       background: #0f2027;
       color: #aaa;
       font-size: 0.9rem;
       margin-top: -5px;
     }
 
-    footer a {
-      color: #00adb5;
-      text-decoration: none;
-      font-weight: 600;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 15px;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .social-links a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      vertical-align: middle;
     }
+
+    .social-links a:hover img {
+      transform: scale(1.15);
+    }
+
   </style>
 </head>
 
@@ -223,7 +232,7 @@
         <p>
           Interactive Power BI dashboard analyzing regional sales trends and forecasting revenue performance.
         </p>
-        <a href="https://github.com/yourusername/powerbi-sales-dashboard" target="_blank" class="btn">View Report</a>
+        <a href="https://github.com/monojitbgit/SuperStore-Sales-Data-Analysis--Power-BI-Dashboard" target="_blank" class="btn">View Report</a>
       </div>
 
       <!-- Project 2 -->
@@ -280,19 +289,25 @@
   </section>
 
 
-
   <footer>
-    <p>Connect with me on 
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> • 
-      <a href="mailto:yourname@example.com">Email</a> • 
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </p>
+    <div class="social-links">
+      <a href="https://github.com/monojitbgit" target="_blank">
+        <img src="images/github.png" alt="">
+      </a>
+      <a href="https://linkedin.com/in/monojitb25" target="_blank">
+        <img src="images/linkedin.png" alt="">
+      </a>
+      <a href="mailto:monojitb@yahoo.com">
+        <img src="images/yahoo.png" alt="">
+      </a>
+    </div>
+
     <p>© <span id="year"></span> Your Name | Built with ❤️ using GitHub Pages</p>
   </footer>
+
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
