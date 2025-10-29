@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monojit | Data Analyst Portfolio</title>
+    <title>Monojit Biswas | Data Analyst Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -37,21 +37,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(125deg, var(--darker) 0%, var(--dark) 100%);
-        }
-
-        .bg-animation::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0,212,255,0.1) 0%, transparent 50%);
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            background: var(--darker);
         }
 
         /* Navigation */
@@ -109,30 +95,8 @@
             width: 100%;
             height: 100%;
             z-index: 0;
-        }
-
-        .hero-background::before {
-            content: '';
-            position: absolute;
-            top: -10%;
-            right: -5%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(40px);
-        }
-
-        .hero-background::after {
-            content: '';
-            position: absolute;
-            bottom: -15%;
-            left: -5%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(236,72,153,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(50px);
+            overflow: hidden;
+            background: #000000;
         }
 
         .hero-content {
@@ -219,18 +183,27 @@
         /* Section Styles */
         section {
             padding: 5rem 5%;
-            max-width: 1400px;
+            width: 100%;
             margin: 0 auto;
+            margin-bottom: 5rem;
         }
 
         section:not(#home) {
             position: relative;
             background: var(--darker);
             z-index: 2;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            max-width: 1400px;
         }
 
         #about {
             margin-top: 100vh;
+        }
+
+        footer {
+            position: relative;
+            z-index: 2;
         }
 
         .section-title {
@@ -660,8 +633,8 @@
             </div>
             <div class="about-text">
                 <h3>Data Analyst | Power BI | SQL | Python Developer</h3>
-                <p>I’m a data-driven professional with expertise in data analysis, business intelligence, and automation, dedicated to transforming raw data into meaningful, actionable insights. I specialize in developing interactive dashboards and automated reporting systems using Power BI, SQL, and Python to support data-informed decision-making.
-                <p>Passionate about development, process optimization, and artificial intelligence, I’m constantly exploring innovative ways to make workflows smarter and more efficient. I believe in combining data, automation, and AI to uncover insights that drive real business impact.</p>
+                <p>Passionate data analyst with expertise in transforming complex datasets into compelling visual stories and actionable business insights. Specialized in building interactive dashboards, optimizing SQL queries, and developing Python-based data solutions.</p>
+                <p>I thrive on solving challenging business problems through data-driven approaches, delivering solutions that drive strategic decision-making and measurable business impact.</p>
                 <div class="cta-buttons" style="justify-content: flex-start; margin-top: 2rem;">
                     <a href="#projects" class="btn btn-primary">View Portfolio</a>
                     <a href="#contact" class="btn btn-secondary">Let's Connect</a>
