@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monojit Biswas | Data Analyst Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 100 100'%3E%3Crect width='100%25' height='100%25' fill='black'/%3E%3Ctext x='50%25' y='73%25' font-size='85' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'%3Em%3C/text%3E%3C/svg%3E">
+    <title>Monojit Biswas</title>
     <style>
         * {
             margin: 0;
@@ -38,8 +39,9 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(125deg, var(--darker) 0%, var(--dark) 100%);
+            background: url("/home/monolith/Pictures/wp.jpg") no-repeat center center / cover;
         }
+
 
         .bg-animation::before {
             content: '';
@@ -95,7 +97,7 @@
             justify-content: center;
             text-align: center;
             padding: 2rem;
-            position: fixed;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
@@ -119,9 +121,6 @@
             right: -5%;
             width: 1280px;
             height: 720px;
-            background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(40px);
         }
 
         .hero-background::after {
@@ -129,11 +128,8 @@
             position: absolute;
             bottom: -15%;
             left: -5%;
-            width: 1080x;
+            width: 1080px;
             height: 720px;
-            background: radial-gradient(circle, rgba(236,72,153,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            filter: blur(50px);
         }
 
         .hero-content {
@@ -219,20 +215,25 @@
 
         /* Section Styles */
         section {
-            padding: 5rem 5%;
-            max-width: 1400px;
-            margin: 0 auto;
+            max-width: 100% !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 5rem 15%;
         }
 
+        /* Your existing block: keep it */
         section:not(#home) {
             position: relative;
             background: #1a1a1a;
             z-index: 2;
+            background: transparent;
+
         }
 
         #about {
-            margin-top: 100vh;
+            margin-top: 0vh !important;
         }
+
 
         .section-title {
             font-size: clamp(2rem, 5vw, 3rem);
@@ -240,10 +241,8 @@
             margin-bottom: 3rem;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
-        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -441,6 +440,18 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+        }
+
+        /* Project buttons: fix color + styling */
+        .project-btn,
+        .project-btn:visited {
+            color: #ffffff !important;   /* changes link text color */
+            text-decoration: none !important;   /* remove underline */
+            font-weight: 500;
+        }
+
+        .project-btn:hover {
+            color: var(--primary) !important; /* hover color */
         }
 
 
@@ -660,10 +671,10 @@
                     <a href="https://github.com/monojitb19" target="_blank" class="social-link" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://kaggle.com/monojitb" target="_blank" class="social-link" title="Kaggle">
+                    <a href="https://kaggle.com/mymonojitb" target="_blank" class="social-link" title="Kaggle">
                         <i class="fab fa-kaggle"></i>
                     </a>
-                    <a href="mailto:monojitb@yahoo.com" class="social-link" title="Email">
+                    <a href="mailto:mymonojitb@yahoo.com" class="social-link" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -830,7 +841,7 @@
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                         <br>
-                        <a href="https://medium.com/@monojitb/db-optimization-case-study" target="_blank" class="project-btn project-btn-secondary">
+                        <a href="https://medium.com/@mymonojitb/db-optimization-case-study" target="_blank" class="project-btn project-btn-secondary">
                             <i class="fas fa-book"></i> Case Study
                         </a>
                     </div>
@@ -961,7 +972,7 @@
                 <!-- Optional: Redirect after submission -->
                 <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Monojit Biswas" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="text" name="subject" placeholder="Subject" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -1130,4 +1141,3 @@
     </script>
 </body>
 </html>
-
